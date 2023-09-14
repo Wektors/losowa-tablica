@@ -1,9 +1,8 @@
 <template>
 	<div>
-    <div :key="element" v-for="element in this.kontener">
-      {{  element }}
+    <div >
+      {{  this.numbers }}
     </div>
-		<button v-on:click="losowanie">+</button>
 	</div>
 </template>
 
@@ -13,11 +12,10 @@ import Component from "vue-class-component";
 
 // Define the component in class-style
 @Component
-export default class Kontener extends Vue {
+export default class Container_component extends Vue {
 	// Class properties will be component data
-
-	// Methods will be component methods
 	
+	// Methods will be component methods
 	
 }
 </script>
