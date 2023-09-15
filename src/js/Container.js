@@ -1,5 +1,4 @@
-// export default
-class Container {
+export default class Container {
 	constructor(...props) {
 		this.elements = [...props];
 	}
@@ -12,17 +11,32 @@ class Container {
 	}
 }
 
-const numbers = new Container(
-	{title: "first"},
-	{title: "second"},
-	{title: "third"},
-	{title: "fourth"},
-	{title: "fifth"},
-	{title: "sixth"}
+export const numbers = new Container(
+	{
+		id: 1,
+		title: "first",
+	},
+	{
+		id: 2,
+		title: "second",
+	},
+	{
+		id: 3,
+		title: "third",
+	},
+	{
+		id: 4,
+		title: "fourth",
+	},
+	{
+		id: 5,
+		title: "fifth",
+	},
+	{
+		id: 6,
+		title: "sixth",
+	}
 );
 
 console.log(numbers.elements);
 
-numbers.shuffle();
-
-console.log(numbers.elements);

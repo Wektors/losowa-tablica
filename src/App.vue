@@ -11,7 +11,7 @@ import Container_component from './components/Container_component.vue'
 export default {
   name: 'App',
   components: {
-    Container_component
+    Container_component,
   }
 }
 </script>
